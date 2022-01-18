@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Titillium+Web:ital@1 & display=swap');
+
+@font-face {
+    font-family: 'Font-logo';
+    src: url(fonts/bubblegum-sans-regular.otf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #858282;
+    color: rgba(0, 0, 0, 1);
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*Configuração do cabeçalho*/
+header#cabecalho {
+    border-bottom: 1px #606060 solid;/*cria uma linha*/
+    height: 150px;
+    background: url("imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+    background-color: #d0cfcf;
+    
+}
+
+header#cabecalho h1 {
+    font-family: 'Font-logo';
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    padding: 0px;
+    font-family: 'Titillium Web', sem serifa;
+    font-size: 20pt;
+
+}
+
+/*Posicionar o objeto (ocúlos) na direita*/
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'Font-logo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 13pt;
+    color: #0a0a0a;
+    background-color: #dcd7d7;
+}
+
+.direita {
+    text-align: right;
+}
+
+/*Formatação de imagens com LEGENDA*/
+figure.foto-legenda {
+    position: relative;
+    border: 8px  solid #f7f6f6;/*borda*/
+    box-shadow: 1px 1px 4px black;/*sombra na imagem*/
+}
+
+/*Formatação tudo que for IMG*/
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Formatação tudo que for figcaption*/
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+
+/*Quando passar o mouse*/
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+nav#menu {
+    display: block;/*Faz flutuar pela tela*/
+}
+
+/*Formatação do menu de navegação*/
+nav#menu ul {
+    list-style: none;/*some os marcadores no menu*/
+    text-transform: uppercase;/*transforma em letras maisculas*/
+    position: absolute;
+    top: -10px;
+    left: 450px;
+}
+
+/*Transformar a lista (LI) vertical em horizontal*/
+nav#menu ul li{
+    
+    display: inline-block;/*Bloco em mesma linha*/
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+/*Esconder o menu principal (H1)*/
+nav#menu h1 {
+    display: none;
+}
+
+/*Formatação dos links*/
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Quando passar o mouse*/
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+div#interface {
+    width: 1200px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    padding: 10px;
+}
+
+/*Formatação da area principal do site*/
+section#corpo {
+    display: block;
+    width: 750px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    background-color: #9d9c9c;
+}
+
+article#noticia-principal h2 {
+    font-size: 17pt;
+    color: #606060;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 10px 10px 0px;
+
+}
+
+/*Formatação da area lateral do site*/
+aside#lateral {
+    display: block;
+    width: 420px;
+    float: right;
+    background-color: #9d9c9c;
+    
+}
+
+aside#lateral h2 {
+    background-color: #dcd7d7;
+    
+}
+
+table#tabelaespec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaespec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaespec td.ce {
+    color: #ffffff;
+    background-color: #312f2f;
+    vertical-align: top;
+    font-weight: bolder;
+
+}
+
+table#tabelaespec td.cd {
+    color: #131212;
+    background-color: #ebe4e4;
+    vertical-align: top;
+    font-weight: bolder;
+}
+
+table#tabelaespec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaespec caption span {
+    display: block;
+    float: right;
+    color: #888888;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+iframe#android {
+    padding-left: 4px;
+}
+
+iframe#android1 {
+    padding-left: 4px;
+}
+
+iframe#android2 {
+    padding-left: 4px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+    background-color: rgb(56, 54, 54);
+    color: white;
+}
+
+footer#rodape p {
+    text-align: center;
+}
